@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 const Header = () => {
@@ -22,7 +23,9 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <Link href='/' className="logo"><img src="./logo.svg" alt="" /></Link>
+        <Link href='/' className="logo">
+          <Image width={50} height={50} src="./logo.svg" alt="" />
+        </Link>
         <ul>
           {
             navItems.map((item, i) => {
