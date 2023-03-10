@@ -14,13 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+button{
+  all: unset;
+  padding: 8px 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
 }
