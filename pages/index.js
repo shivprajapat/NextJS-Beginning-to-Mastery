@@ -4,7 +4,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>getStaticProps</h1>
+      <h1>Next.js complete Course 2023 (🚀)</h1>
     </div>
   );
 };

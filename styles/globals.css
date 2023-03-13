@@ -94,22 +94,32 @@ aside {
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
 }
 
+aside a {
+  color: #000;
+}
+
 article {
   width: 100%;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px #ddd;
-  display: flex;
-  align-self: normal;
+
 }
 
 article button {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 28px;
+  font-size: 14px;
   padding: 0;
   display: grid;
   place-items: center;
   margin-bottom: 10px;
+  margin-right: 0;
+}
+
+.price {
+  width: fit-content;
+  padding-inline: 10px;
 }
 
 article h3 {
@@ -119,4 +129,21 @@ article h3 {
 
 article p {
   font-size: 14px;
+}
+
+.post-details {
+  max-width: min(100% - 20px, 700px);
+  margin-inline: auto;
+}
+
+.go-back {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.flex-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }

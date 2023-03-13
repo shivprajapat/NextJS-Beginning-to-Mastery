@@ -8,15 +8,15 @@ const Header = () => {
       path: "/"
     },
     {
-      title: "Users",
-      path: "/users"
+      title: "Posts",
+      path: "/posts"
     }
   ]
   return (
     <header>
       <nav>
         <Link href='/' className="logo">
-          <Image width={50} height={50} src="./logo.svg" alt="" />
+          <Image width={50} height={50} src="/logo.png" alt="" />
         </Link>
         <ul>
           {
