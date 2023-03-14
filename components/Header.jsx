@@ -22,6 +22,10 @@ const Header = () => {
     {
       title: "Dashboard",
       path: "/dashboard"
+    },
+    {
+      title: "SWR",
+      path: "/dashboard-swr"
     }
   ]
   return (
