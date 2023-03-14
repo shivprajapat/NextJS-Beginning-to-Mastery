@@ -121,7 +121,9 @@ article button {
   width: fit-content;
   padding-inline: 10px;
 }
-
+.red{
+  background-color: red;
+}
 article h3 {
   margin-bottom: 10px;
   font-size: 18px;

@@ -1,7 +1,6 @@
 import React from "react";
 
 const NewsArticleList = ({ articles }) => {
-  console.log("articles :>> ", articles);
   return (
     <div>
       <h1>List of News Articles</h1>
@@ -14,7 +13,7 @@ const NewsArticleList = ({ articles }) => {
                 <div className="flex-space">
                   <button>{id}</button>
                   <button className="price">{price}</button>
-                  <button className="price">{category}</button>
+                  <button className="price red">{category}</button>
                 </div>
                 <h3>{title}</h3>
                 <p>{description}</p>
@@ -30,7 +29,7 @@ const NewsArticleList = ({ articles }) => {
 export default NewsArticleList;
 
 export async function getServerSideProps() {
-  console.log("Pre-rendering NewsArticleList");
+  // console.log("Pre-rendering NewsArticleList");
 
   const response = await fetch("http://localhost:4000/news");
   const data = await response.json();
