@@ -1,7 +1,6 @@
 import React from "react";
 
 const ArticleListByCategory = ({ articles, category }) => {
-  console.log({ articles });
   return (
     <div>
       <h1>
@@ -30,18 +29,23 @@ const ArticleListByCategory = ({ articles, category }) => {
 
 export default ArticleListByCategory;
 export async function getServerSideProps(context) {
-  const { params } = context;
-  const { categoryId } = params;
+  const { params, req, res, query } = context;
+
+  const { category } = params;
   const response = await fetch(
-    `http://localhost:4000/news?category=${categoryId}`
+    `http://localhost:4000/news?category=${category}`
   );
   const data = await response.json();
 
-  console.log(`Pre-rendering News Articles for category ${categoryId}`);
+  console.log(`Pre-rendering News Articles for category ${category}`);
+
+  res.setHeader("Set-Cookie", ["name=Shiv"]);
+  console.log(req.headers.cookie);
+  console.log(query);
   return {
     props: {
       articles: data,
-      category: categoryId,
+      category: category,
     },
   };
 }
