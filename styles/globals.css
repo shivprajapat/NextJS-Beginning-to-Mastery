@@ -66,7 +66,7 @@ header {
   background-color: #000;
   padding: 20px 15px;
 }
-
+header nav{margin: 0;}
 header nav,
 main {
   max-width: min(100% - 20px, 1440px);
@@ -148,4 +148,5 @@ article p {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
