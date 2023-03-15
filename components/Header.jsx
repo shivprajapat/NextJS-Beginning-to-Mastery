@@ -26,6 +26,10 @@ const Header = () => {
     {
       title: "SWR",
       path: "/dashboard-swr"
+    },
+    {
+      title: "Events",
+      path: "/events"
     }
   ]
   return (
