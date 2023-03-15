@@ -2,23 +2,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
+  margin: 0;
   text-align: center;
+  color: green;
 }
 
 a {
@@ -89,92 +79,4 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-aside {
-  gap: 10px;
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-}
-
-aside a {
-  color: #000;
-}
-
-article {
-  width: 100%;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ddd;
-
-}
-
-article button {
-  width: 35px;
-  height: 28px;
-  font-size: 14px;
-  padding: 0;
-  display: grid;
-  place-items: center;
-  margin-bottom: 10px;
-  margin-right: 0;
-}
-
-.price {
-  width: fit-content;
-  padding-inline: 10px;
-}
-
-.red {
-  background-color: red;
-}
-
-article h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-article p {
-  font-size: 14px;
-}
-
-.post-details {
-  max-width: min(100% - 20px, 700px);
-  margin-inline: auto;
-}
-
-.go-back {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.flex-space {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-}
-
-.form {
-  max-width: 500px;
-  margin-inline: auto;
-}
-
-.form .form-group:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.form label {
-  font-size: 16px;
-  text-transform: capitalize;
-  font-weight: 600;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.form input {
-  width: 100%;
-  padding: 10px;
 }
