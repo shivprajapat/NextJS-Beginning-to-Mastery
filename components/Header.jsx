@@ -8,28 +8,8 @@ const Header = () => {
       path: "/"
     },
     {
-      title: "Posts",
-      path: "/posts"
-    },
-    {
-      title: "Products",
-      path: "/products"
-    },
-    {
-      title: "News",
-      path: "/news"
-    },
-    {
-      title: "Dashboard",
-      path: "/dashboard"
-    },
-    {
-      title: "SWR",
-      path: "/dashboard-swr"
-    },
-    {
-      title: "Events",
-      path: "/events"
+      title: "Comments",
+      path: "/comments"
     }
   ]
   return (
