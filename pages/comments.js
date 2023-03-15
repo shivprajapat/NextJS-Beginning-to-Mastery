@@ -23,7 +23,12 @@ const Comments = () => {
   };
 
   const deleteComment = async (commentId) => {
-    console.log({ commentId });
+    const response = await fetch(`api/comments/${commentId}`, {
+      method: "DELETE",
+    });
+    const data = await response.json();
+    console.log(data);
+    fetchComments();
   };
   return (
     <div>
