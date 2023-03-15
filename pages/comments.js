@@ -21,6 +21,10 @@ const Comments = () => {
     console.log(data);
     setComment("");
   };
+
+  const deleteComment = async (commentId) => {
+    console.log({ commentId });
+  };
   return (
     <div>
       <h1>Comments</h1>
@@ -46,7 +50,13 @@ const Comments = () => {
             <article key={index}>
               <div>
                 <div className="flex-space">
-                  <button className="price red">{id}</button>
+                  <button className="price">{id}</button>
+                  <button
+                    className="price red"
+                    onClick={() => deleteComment(id)}
+                  >
+                    delete
+                  </button>
                 </div>
                 <p>{text}</p>
               </div>
