@@ -1,9 +1,16 @@
+import Head from 'next/head'
 import React from 'react'
 import Header from '../components/header'
 
 const About = () => {
     return (
-        <h1>About Page</h1>
+        <>
+            <Head>
+                <title>My About page</title>
+                <meta name="description" content="My About page" />
+            </Head>
+            <h1>About Page</h1>
+        </>
     )
 }
 
