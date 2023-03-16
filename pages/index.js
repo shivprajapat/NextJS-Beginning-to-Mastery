@@ -1,25 +1,11 @@
 import React from "react";
-
+import Button from "../components/button";
+import styles from "../styles/home.module.css"
 const Home = () => {
   return (
-    <div>
-      <style jsx global>{`
-        body {
-          background: black;
-          color: white;
-        }
-      `}</style>
+    <div className={styles.home}>
       <h1>Next.js complete Course 2023 (🚀)</h1>
-      <style jsx>
-        {`
-          .description {
-            background: red;
-          }
-        `}
-      </style>
-      <div className="description">
-        <p>Hello description</p>
-      </div>
+      <Button> Hello CSS </Button>
     </div>
   );
 };
