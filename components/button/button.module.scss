@@ -1,0 +1,10 @@
+$primary-color: black;
+$white-color: white;
+
+.primary {
+    all: unset;
+    background-color: $primary-color;
+    color: $white-color;
+    padding: 10px;
+    border-radius: 3px;
+}
