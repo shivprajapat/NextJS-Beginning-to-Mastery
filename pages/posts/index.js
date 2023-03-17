@@ -24,7 +24,9 @@ export default PostList;
 export async function getStaticProps() {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
   const data = await response.json();
-
+  const name = process.env.DB_USER
+  const password = process.env.DB_PASSWORD
+  console.log(`Connecting to ${name} and ${password}`);
   return {
     props: {
       posts: data,

@@ -10,14 +10,6 @@ const Header = () => {
     {
       title: "Posts",
       path: "/posts"
-    },
-    {
-      title: "Products",
-      path: "/products"
-    },
-    {
-      title: "News",
-      path: "/news"
     }
   ]
   return (
