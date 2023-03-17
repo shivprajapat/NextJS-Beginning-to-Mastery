@@ -1,11 +1,11 @@
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
-import img from '../public/1.jpg'
+// import img from '../public/1.jpg'
 const PetsPage = () => {
     return (
         <div>
             <h1>Pets Page</h1>
-            <Image
+            {/* <Image
                 src={img}
                 placeholder="blur"
                 alt="pet"
@@ -20,7 +20,7 @@ const PetsPage = () => {
                     height="420"
                     key={index}
                 />
-            ))}
+            ))} */}
         </div>
     );
 };
